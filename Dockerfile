@@ -43,6 +43,7 @@ COPY t2_node.py t2_safety.py /opt/go1/
 FROM ${RUNTIME_IMAGE}
 COPY t3_node.py t3_policy.py t3_weights.npz /opt/go1/
 COPY LICENSE-WALK-THESE-WAYS /opt/go1/
+COPY t4_node.py t4_odometry.py /opt/go1/
 COPY --chmod=0755 entrypoint.sh /entrypoint.sh
 
 USER participant

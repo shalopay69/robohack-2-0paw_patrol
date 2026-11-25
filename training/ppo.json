@@ -1,0 +1,18 @@
+{
+  "seed": 917,
+  "speed_mps": 0.4,
+  "iterations": 10,
+  "episodes_per_iteration": 4,
+  "episode_sim_seconds": 7.0,
+  "epochs": 4,
+  "batch_size": 128,
+  "actor_lr": 0.00008,
+  "critic_lr": 0.0005,
+  "action_std": 0.07,
+  "gamma": 0.99,
+  "gae_lambda": 0.95,
+  "clip_range": 0.15,
+  "anchor_weight": 2.0,
+  "validation_seed": 2170,
+  "validation_episodes": 2
+}

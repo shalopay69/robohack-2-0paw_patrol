@@ -1,0 +1,10 @@
+{"episode": 1, "speed_mps": 0.4, "timed_sim_seconds": 25.512, "forward_m": 3.0, "fell": false, "bare_messages": 2457, "safe_messages": 2472, "success": true}
+{"episode": 2, "speed_mps": 0.4, "timed_sim_seconds": 25.27, "forward_m": 3.001, "fell": false, "bare_messages": 2445, "safe_messages": 2460, "success": true}
+{"episode": 3, "speed_mps": 0.4, "timed_sim_seconds": 25.012, "forward_m": 3.001, "fell": false, "bare_messages": 2409, "safe_messages": 2434, "success": true}
+{"episode": 4, "speed_mps": 0.4, "timed_sim_seconds": 24.936, "forward_m": 3.0, "fell": false, "bare_messages": 2431, "safe_messages": 2443, "success": true}
+{"episode": 5, "speed_mps": 0.4, "timed_sim_seconds": 25.046, "forward_m": 3.0, "fell": false, "bare_messages": 2433, "safe_messages": 2448, "success": true}
+{"episode": 6, "speed_mps": 0.4, "timed_sim_seconds": 25.252, "forward_m": 3.0, "fell": false, "bare_messages": 2430, "safe_messages": 2460, "success": true}
+{"episode": 7, "speed_mps": 0.4, "timed_sim_seconds": 24.572, "forward_m": 3.0, "fell": false, "bare_messages": 2443, "safe_messages": 2455, "success": true}
+{"episode": 8, "speed_mps": 0.4, "timed_sim_seconds": 24.258, "forward_m": 3.001, "fell": false, "bare_messages": 2423, "safe_messages": 2436, "success": true}
+{"episode": 9, "speed_mps": 0.4, "timed_sim_seconds": 24.382, "forward_m": 3.0, "fell": false, "bare_messages": 2417, "safe_messages": 2427, "success": true}
+{"episode": 10, "speed_mps": 0.4, "timed_sim_seconds": 23.246, "forward_m": 3.0, "fell": false, "bare_messages": 2411, "safe_messages": 2413, "success": true}

@@ -20,7 +20,7 @@ Safety Block из Т2. Для расчёта награды использова
 | `adaptation_module_latest.jit` | `f0adb113954058a37d2596282f041a3bb128365558ecf64405bbc1353d5dc1b0` |
 | `body_latest.jit` | `6c14b59ca28550a012de3bf5d21fc7d6aa6b6d38eab4dc31e172519f12a19ece` |
 | `baseline.npz` после экспорта | `a003991b156e2170bddc6d9e264c595a39421a9cf0215a2f031d7e1e0f616a26` |
-| `t3_weights.npz` | `77e5e383b0db8212626968e49d499cdea06bf9b67bbf1038656b8c1e42fd336` |
+| `t3_weights.npz` | `77e5e383b0db8212626968e49d499cdeda06bf9b67bbf1038656b8c1e42fd336` |
 
 ## Запуск обучения
 

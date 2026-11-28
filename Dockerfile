@@ -41,9 +41,24 @@ COPY --from=dependencies /opt/go1 /opt/go1
 COPY t2_node.py t2_safety.py /opt/go1/
 
 FROM ${RUNTIME_IMAGE}
+ARG INSTALL_T5_DEPS=1
+USER root
+RUN if [ "$INSTALL_T5_DEPS" = 1 ]; then \
+        apt-get update \
+        && apt-get install -y --no-install-recommends python3-pip \
+            ros-humble-nav2-controller ros-humble-nav2-planner ros-humble-nav2-theta-star-planner \
+            ros-humble-nav2-navfn-planner \
+            ros-humble-nav2-regulated-pure-pursuit-controller ros-humble-nav2-bt-navigator \
+            ros-humble-dwb-core ros-humble-dwb-critics ros-humble-dwb-plugins \
+            ros-humble-nav2-behaviors ros-humble-nav2-lifecycle-manager \
+        && rm -rf /var/lib/apt/lists/* \
+        && python3 -m pip install --no-cache-dir --no-deps --target /opt/go1/python opencv-contrib-python-headless==4.10.0.84; \
+    fi
 COPY t3_node.py t3_policy.py t3_weights.npz /opt/go1/
 COPY LICENSE-WALK-THESE-WAYS /opt/go1/
 COPY t4_node.py t4_odometry.py /opt/go1/
+COPY t5_aruco.py t5_grid.py t5_map.py t5_goal.py t5_frontier.py t5_launch.py t5_nav2.yaml t5_velocity_gate.py \
+    t5_navigate.xml t5_navigate_through.xml t5_explore.xml /opt/go1/
 COPY --chmod=0755 entrypoint.sh /entrypoint.sh
 
 USER participant
